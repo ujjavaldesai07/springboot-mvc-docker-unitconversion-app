@@ -7,7 +7,7 @@ Build Unit Conversion App using SpringBoot and SpringMVC with containerization u
 
 	https://unit-conversion-application.herokuapp.com
 	
-**Note: Sometimes the above link takes time to load on the heroku server. **
+**Note:** Sometimes the above link takes time to load on the heroku server.
 
 **Steps for executing using docker:**
 1. Clone/Download the repository.
