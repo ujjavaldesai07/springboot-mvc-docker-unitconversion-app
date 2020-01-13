@@ -1,0 +1,16 @@
+.heading {
+	color: red;
+	padding-bottom: 50px;
+	padding-top: 20px
+}
+
+.mid-container {
+	max-width: 800px;
+	padding-bottom: 50px;
+	padding-top: 30px;
+	border: 2px solid red;
+}
+
+.borders {
+	border: 2px solid black;
+}

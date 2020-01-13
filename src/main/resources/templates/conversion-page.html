@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Unit Conversion</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<link rel="stylesheet" th:href="@{/css/style.css}" />
+
+</head>
+
+<body style="background-color: black">
+	<form action="#" th:action="@{/conversion-operation}"
+		th:object="${conversion}" method="post">
+		<h1 class="text-center font-weight-bold display-4 heading"
+			th:text="*{conversionPage}"></h1>
+		<div class="container-fluid mid-container" th:classappend="*{bgColor}">
+			<div class="row justify-content-center">
+				<div class="col-sm-5">
+					<h4 class="font-weight-bold">From:</h4>
+					<input type="text" maxlength="10" th:field="*{fromVal}"
+						class="form-control borders">
+				</div>
+				<div class="col-sm-5">
+					<h4 class="font-weight-bold">To:</h4>
+					<input type="text" th:field="*{toVal}" disabled
+						class="form-control borders">
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-sm-7 pt-4">
+					<p style="padding-left: 20px"
+						class="bg-warning text-danger font-weight-bold"
+						th:text="*{errorMsg} != ''? ' Error: ' + *{errorMsg}"></p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-sm-4 pt-4">
+					<button type="submit" class="form-control btn btn-dark active">Submit</button>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-sm-5 pt-4">
+					<h4 class="font-weight-bold">Select Unit:</h4>
+					<select class="form-control borders" th:field="*{fromSelectUnit}"
+						size="5">
+						<option th:each="entry : *{timeUnits}" th:value="${entry.key}"
+							th:text="${entry.value}"></option>
+					</select>
+				</div>
+				<div class="col-sm-5 pt-4">
+					<h4 class="font-weight-bold">Select Unit:</h4>
+					<select class="form-control borders" th:field="*{toSelectUnit}"
+						size="5">
+						<option th:each="entry : *{timeUnits}" th:value="${entry.key}"
+							th:text="${entry.value}"></option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</form>
+
+</body>
+</html>
