@@ -19,7 +19,7 @@ public class ConversionController {
 	/*
 	 * display home page 
 	 */
-	@GetMapping("/home")
+	@GetMapping("/")
 	public String showHome(Model theModel) {
 		return "home-page";
 	}
