@@ -7,9 +7,7 @@ Build Unit Conversion App using SpringBoot and SpringMVC with containerization u
 
 	https://unit-conversion-application.herokuapp.com
 	
-**Note:** 
-1. It is only running on a free dyno, so it may take some time before it responds.
-2. Data will be reset to default after every 15 mins by the scheduler.
+**Note:** It is only running on a free dyno, so it may take some time before it responds.
 
 **Steps for executing using docker:**
 1. Clone/Download the repository.
