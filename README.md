@@ -1,6 +1,6 @@
 # springboot-mvc-docker-unitconversion-app
 
-Unit Conversion application built using Springboot and SpringMVC with containerization using Docker.
+Unit Conversion application built using Spring Boot and SpringMVC with containerization using Docker.
 
 **DEMO**
  - Deployed to Heroku Cloud: 
